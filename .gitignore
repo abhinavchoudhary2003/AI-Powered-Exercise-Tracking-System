@@ -1,0 +1,40 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+
+# --- Virtual environment ---
+venv/
+env/
+.venv/
+MyTestenv/
+MyTest_Env/
+
+# --- Project data (generated at runtime, not source) ---
+exercise_tracker.db
+*.db
+*.sqlite3
+
+# --- Model / weight files (large binaries -- document download steps in README instead) ---
+ml_models/*.task
+ml_models/*.onnx
+ml_models/*.h5
+
+# DeepFace caches its downloaded weights under the user's home directory by
+# default (~/.deepface), so nothing from that lives in the repo -- but if it
+# ever gets pointed at a local folder here, ignore it too:
+.deepface/
+
+# --- Streamlit ---
+.streamlit/secrets.toml
+
+# --- Editor / OS clutter ---
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# --- Env / secrets ---
+.env
